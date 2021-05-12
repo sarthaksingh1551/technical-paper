@@ -296,9 +296,7 @@ In the above code, we have 4 users who are joining a chat session by registering
 #
 
 # Conclusion
-Design patterns are now and again utilized in larger applications. However, to comprehend where one may be worthwhile over another accompanies practice. 
-
-Prior to building any application, you ought to completely consider every entertainer and how they associate with each other. In the wake of checking on the Module, Prototype, Observer, and Singleton designs pattern, you ought to have the option to recognize these patterns and use them in nature.
+Design patterns are now and again utilized in larger applications. However, to comprehend where one may be worthwhile over another accompanies practice. Prior to building any application, you ought to completely consider every entertainer and how they associate with each other. In the wake of checking on the Module, Prototype, Observer, and Singleton designs pattern, you ought to have the option to recognize these patterns and use them in nature.
 #
 
 # References
