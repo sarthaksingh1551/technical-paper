@@ -1,5 +1,5 @@
 # **What is Design Pattern?**
-In software design language, a pattern is a reusable solution which a programmer uses to solve commonly occuring problems. In other words, patterns are templates for solving a problem that can be used in different situations. [*[1]*](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+In software design language, a pattern is a reusable solution which a programmer uses to solve commonly occurring problems. In other words, patterns are templates for solving a problem that can be used in different situations. [*[1]*](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 #
 
 
@@ -10,7 +10,7 @@ JavaScript modules are the most prevalently used design patterns for keeping par
 
 In JavaScript, modules are “classes”. One of the many advantages of classes is encapsulation - it is used to protect the states and behaviors from being accessed from other classes.
 
-Modules ought to be Immediately-Invoked-Function-Expressions (IIFE) to take into account private scopes - that is, a conclusion that ensure protection of variables and methods (in any case, it will return an object rather than a function). [*[2]*](https://www.digitalocean.com/community/tutorial_series/javascript-design-patterns)
+Modules ought to be Immediately-Invoked-Function-Expressions (IIFE) to take into account private scopes - that is, a conclusion that ensures protection of variables and methods (in any case, it will return an object rather than a function). [*[2]*](https://www.digitalocean.com/community/tutorial_series/javascript-design-patterns)
 
 This is what it resembles:
 
@@ -24,7 +24,7 @@ This is what it resembles:
 
 })();
 ```
-Here we initialize the private variables and/or functions prior to returning our object that we need to return. Code outside of our conclusion can't get to these private variables since it is not in a same scope. How about we bring it into execution:
+Here we initialize the private variables and/or functions prior to returning our object that we need to return. Code outside of our conclusion can't get to these private variables since it is not in the same scope. How about we bring it into execution:
 
 Here is one javascript file, lets call it languages.js:
 
@@ -44,10 +44,10 @@ class programmingLanguages {
         this.langList.push(language)
     }
 }
-export default programmingLanguages; // This will export the class, so that we can use it in different files.
+export default programmingLanguages; // This will export the class so that we can use it in different files.
 ```
 
-Lets look at another javascript file to use the class programmingLanguages. Lets call it main.js:
+Let us look at another javascript file to use the class programmingLanguages. Let us call it main.js:
 
     import programmingLanguages from "file-location";
 
@@ -117,7 +117,7 @@ The objects made are clones (shallow clones) of the original object that are pas
 
 To clone an object, a constructor must exist to instantiate the first object. Next, by using the keyword prototype variables and methods bind to the object’s structure. Let’s look at a basic example:
 
-To clone an article, existance of a constructor is a must to launch the first object. Then, by utilizing the keyword prototype, variables and methods tie to the objects's structure. How about we take a gander at a fundamental example:
+To clone an article, the existence of a constructor is a must to launch the first object. Then, by utilizing the keyword prototype, variables and methods tie to the objects’ structure. How about we take a gander at a fundamental example:
 
 ```javascript
 var myCar = {
@@ -135,7 +135,7 @@ console.log(yourCar.manufacturer);
 ```
 
 ## Singleton Design Pattern
-A Singleton Design Pattern limits the number of instances of a perticular object to just one. The Singleton confines customers from creating numerous objects, after the principal object made, it will return instances of itself.
+A Singleton Design Pattern limits the number of instances of a particular object to just one. The Singleton confines customers from creating numerous objects, after the principal object is made, it will return instances of itself.
 
 ```javascript
 var mySingleton = (function () {
@@ -188,18 +188,18 @@ console.log(X.publicProperty);
 console.log(X.getRandomNumb() === Y.getRandomNumb());
 ```
 
-In AngularJS, Singletons are pervasive, the most striking being services, factories, and suppliers. Since they keep up state and gives asset getting to, generating two instances invalidates the purpose of a common service/factory/provider.
+In AngularJS, Singletons are pervasive, the most striking being services, factories, and suppliers. Since they keep upstate and gives asset getting to, generating two instances invalidates the purpose of a common service/factory/provider.
 
 Race conditions happen in multi-threaded applications when more than one thread attempts to get to a similar asset. Singletons are vulnerable to race conditions, to such an extent that assuming no instance has initialized first, two threads could generate two objects as opposed to returning and instance. This nullifies the point of a singleton. Subsequently, developers should be aware of synchronization while carrying out singletons in multithreaded applications. [*[2]*](https://www.digitalocean.com/community/tutorial_series/javascript-design-patterns)
 
 
 
 ## Mediator Design Pattern
-Dictionary references Mediator to a *go between as an unbiased gathering that aids arrangements and compromise*.
+Dictionary references Mediator to a *go-between as an unbiased gathering that aids arrangements and compromise*.
 
 ![](https://www.dofactory.com/img/diagrams/javascript/javascript-mediator.jpg)
 
-A certifiable relationship could be an average airport traffic control system. A tower (Mediator) handles what planes can take off and land since all interchanges (instructions being tuned in out for or broadcast) are done from the planes to the control tower, instead of from plane-to-plane. A brought together regulator is vital to the achievement of this framework and that is actually the job a Mediator plays in programming plan. [*[1]*](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+A certifiable relationship could be an average airport traffic control system. A tower (Mediator) handles what planes can take off and land since all interchanges (instructions being tuned in out for or broadcast) are done from the planes to the control tower, instead of from plane-to-plane. A brought together regulator is vital to the achievement of this framework and that is the job a Mediator plays in a programming plan. [*[1]*](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 
 ![](https://miro.medium.com/max/1046/1*BJu9_D2BWkEnbOWtjrIdeg.png)
 
@@ -296,7 +296,7 @@ In the above code, we have 4 users who are joining a chat session by registering
 #
 
 # Conclusion
-Design designs are every now and again utilized in larger applications, however to comprehend where one may be worthwhile over another, accompanies practice. 
+Design patterns are now and again utilized in larger applications. However, to comprehend where one may be worthwhile over another accompanies practice. 
 
 Prior to building any application, you ought to completely consider every entertainer and how they associate with each other. In the wake of checking on the Module, Prototype, Observer, and Singleton designs pattern, you ought to have the option to recognize these patterns and use them in nature.
 #
